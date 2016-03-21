@@ -1,1 +1,20 @@
-/Users/mgreen/.zprezto/runcoms/zshrc
+#
+# ZSH Configuration
+#
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# Setup NVM for Node version management
+export NVM_DIR="/Users/mgreen/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Aliases
+# --------------------------
+alias virtualenv3='virtualenv -p /usr/local/bin/python3.5 venv'
+alias activate='source venv/bin/activate'
+
+
+alias release_www="ssh mgreen@web1.axialmarket.com 'cd /var/www; sudo git pull origin master'"
