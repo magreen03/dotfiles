@@ -22,3 +22,4 @@ alias release_www="ssh mgreen@web1.axialmarket.com 'cd /var/www; sudo git pull o
 
 # Tmux: use system subl command
 alias subl='reattach-to-user-namespace subl'
+alias ta='tmux attach -t'
