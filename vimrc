@@ -15,7 +15,7 @@ syntax on
 filetype plugin indent on
 
 " Set Color Scheme
-colors zenburn
+" colors zenburn
 
 " Plugins using Vim-Plug
 " Use "PlugInstall to Install Plugins
