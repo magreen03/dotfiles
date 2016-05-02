@@ -1,12 +1,36 @@
-" Use Vim settings, rather than Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
-" set nocompatible
+" Leader
+let mapleader = " "
+
+set nobackup
+set nowritebackup
+set noswapfile
+set history=50
+set ruler
+set showcmd
+set autowrite
 
 " Make backspace behave in a sane manner.
 set backspace=indent,eol,start
 
 " Set line numbers
 set number
+set numberwidth=5
+
+" Display whitespace
+set list listchars=tab:»·,trail:·,nbsp:·
+
+" Mark 80 chars width
+set textwidth=80
+set colorcolumn=+1
+
+" Set softtabs to 2 spaces
+set tabstop=2
+set shiftwidth=2
+set shiftround
+set expandtab
+
+" Switch between the last two files
+nnoremap <leader><leader> <c-^>
 
 " Switch syntax highlighting on
 syntax on
@@ -19,14 +43,9 @@ filetype plugin indent on
 
 " Plugins using Vim-Plug
 " Use "PlugInstall to Install Plugins
+" --------------------------------------------------
 call plug#begin()
-
-" Vim Sensible - Decent defaults
-Plug 'tpope/vim-sensible'
-
-" Vim Surrond  - Adds an cs" to change to "
-Plug 'tpope/vim-surround'
-
-" NerdTree
-Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-sensible'     " Vim Sensible - Decent defaults
+Plug 'tpope/vim-surround'     " Vim Surround 
+Plug 'scrooloose/nerdtree'    " NerdTree
 call plug#end()
