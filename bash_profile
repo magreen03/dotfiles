@@ -6,7 +6,7 @@ alias ipy='jupyter qtconsole --ConsoleWidget.font_family="Source Code Pro"'
 alias slt='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 
 # Python: virtualenv aliases
-alias virtualenv3='virtualenv -p /usr/local/sbin/python3.5 venv'
+alias virtualenv3='virtualenv -p /usr/local/bin/python3 venv'
 alias activate='source venv/bin/activate'
 
 # NVM

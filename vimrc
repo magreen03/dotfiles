@@ -1,6 +1,10 @@
 " Leader
 let mapleader = " "
 
+
+" General Vim Setting
+" --------------------------------------------------
+
 set nobackup
 set nowritebackup
 set noswapfile
@@ -29,23 +33,29 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
-" Switch between the last two files
-nnoremap <leader><leader> <c-^>
-
 " Switch syntax highlighting on
 syntax on
 
 " Enable file type detection and do language-dependent indenting.
 filetype plugin indent on
 
-" Set Color Scheme
-" colors zenburn
+
+" Custom Shortcuts
+" --------------------------------------------------
+
+" Switch between the last two files
+nnoremap <leader><leader> <c-^>
+
+nnoremap <leader>rv :source $MYVIMRC<CR>
 
 " Plugins using Vim-Plug
 " Use "PlugInstall to Install Plugins
 " --------------------------------------------------
+
 call plug#begin()
 Plug 'tpope/vim-sensible'     " Vim Sensible - Decent defaults
-Plug 'tpope/vim-surround'     " Vim Surround 
+Plug 'tpope/vim-surround'     " Vim Surround
 Plug 'scrooloose/nerdtree'    " NerdTree
+Plug 'myusuf3/numbers.vim'    " Numbers
+Plug 'ctrlpvim/ctrlp.vim'     " Ctrlp -> Fuzzy-finding
 call plug#end()
