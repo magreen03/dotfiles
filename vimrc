@@ -39,22 +39,33 @@ syntax on
 " Enable file type detection and do language-dependent indenting.
 filetype plugin indent on
 
+" Color Scheme
+colors zenburn
 
-" Custom Shortcuts
+
+" Leaders
 " --------------------------------------------------
 
-" Switch between the last two files
+" space-space : Switch between the last two files
 nnoremap <leader><leader> <c-^>
 
-nnoremap <leader>rv :source $MYVIMRC<CR>
+" space-rv : Reload vimrc
+nnoremap <leader>rv :source $MYVIMRC<cr>
 
-" Plugins using Vim-Plug
+" space-ev : Edit vimrc
+nnoremap <leader>ev :e $MYVIMRC<cr>
+
+" NerdTree
+nnoremap <leader>nt :NERDTreeToggle %:h<cr>
+
+"  Plugins using Vim-Plug
 " Use "PlugInstall to Install Plugins
 " --------------------------------------------------
 
 call plug#begin()
 Plug 'tpope/vim-sensible'     " Vim Sensible - Decent defaults
 Plug 'tpope/vim-surround'     " Vim Surround
+Plug 'tpope/vim-fugitive'     " Vim Fugitive
 Plug 'scrooloose/nerdtree'    " NerdTree
 Plug 'myusuf3/numbers.vim'    " Numbers
 Plug 'ctrlpvim/ctrlp.vim'     " Ctrlp -> Fuzzy-finding
