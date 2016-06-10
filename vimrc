@@ -1,7 +1,6 @@
 " Leader
 let mapleader = " "
 
-
 " General Vim Setting
 " --------------------------------------------------
 
@@ -40,7 +39,10 @@ syntax on
 filetype plugin indent on
 
 " Color Scheme
-colors zenburn
+" colors zenburn
+colors Tomorrow
+
+nnoremap / /\v
 
 
 " Leaders
@@ -67,6 +69,8 @@ Plug 'tpope/vim-sensible'     " Vim Sensible - Decent defaults
 Plug 'tpope/vim-surround'     " Vim Surround
 Plug 'tpope/vim-fugitive'     " Vim Fugitive
 Plug 'scrooloose/nerdtree'    " NerdTree
+Plug 'scrooloose/syntastic'   " Syntastic
 Plug 'myusuf3/numbers.vim'    " Numbers
 Plug 'ctrlpvim/ctrlp.vim'     " Ctrlp -> Fuzzy-finding
+Plug 'fatih/vim-go'           " vim-go
 call plug#end()
