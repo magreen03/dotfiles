@@ -1,8 +1,7 @@
 #!/bin/bash
 echo "Setting up Symlink files"
-ln -s ~/.vimrc ~/dotfiles/vimrc
-ln -s ~/.tmux.conf ~/dotfiles/tmux.conf
-ln -s ~/.bash_profile ~/dotfiles/bash_profile
-ln -s ~/.bash_prompt ~/dotfiles/bash_prompt
-ln -s ~/.bashrc ~/dotfiles/bashrc
-
+ln -s ~/dotfiles/vimrc ~/.vimrc
+ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
+ln -s ~/dotfiles/bash_profile ~/.bash_profile
+ln -s ~/dotfiles/bash_prompt ~/.bash_prompt 
+ln -s ~/dotfiles/bashrc ~/.bashrc
