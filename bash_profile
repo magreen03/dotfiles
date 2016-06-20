@@ -5,6 +5,10 @@ PATH="/usr/local/sbin:$PATH" export PATH
 alias ipy='jupyter qtconsole --ConsoleWidget.font_family="Source Code Pro"'
 alias slt='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 
+# Aliases
+#  - Axial
+alias sma='ssh -A mgreen@mgreen.axialmarket.com'
+
 # Python: virtualenv aliases
 alias virtualenv3='virtualenv -p /usr/local/bin/python3 venv'
 alias activate='source venv/bin/activate'
@@ -24,7 +28,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 export NVM_DIR="/Users/mgreen/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# Base-Completion script
+# Bash-Completion script
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
