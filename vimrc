@@ -73,6 +73,7 @@ Plug 'scrooloose/syntastic'   " Syntastic
 Plug 'myusuf3/numbers.vim'    " Numbers
 Plug 'ctrlpvim/ctrlp.vim'     " Ctrlp -> Fuzzy-finding
 Plug 'fatih/vim-go'           " vim-go
+Plug 'chriskempson/tomorrow-theme' "
 call plug#end()
 
 
