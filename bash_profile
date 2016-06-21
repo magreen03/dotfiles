@@ -3,7 +3,7 @@ PATH="/usr/local/sbin:$PATH" export PATH
 
 # Aliases
 alias ipy='jupyter qtconsole --ConsoleWidget.font_family="Source Code Pro"'
-alias slt='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+alias sl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 
 # Aliases
 #  - Axial
@@ -39,11 +39,6 @@ export PATH=$PATH:$GOPATH/bin
 
 # Log every bash command
 export PROMPT_COMMAND='if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history 1)" >> ~/.logs/bash-history-$(date "+%Y-%m-%d").log; fi'
-
-# Load bash_rc because item just loads bash_profile
-if [ -f ~/.bashrc ]; then
-  source ~/.bashrc
-fi
 
 # Load Bash prompt
 source ~/.bash_prompt
