@@ -7,7 +7,7 @@ alias sl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 
 # Aliases
 #  - Axial
-alias sma='ssh -A mgreen@mgreen.axialmarket.com'
+alias axm='ssh -A mgreen@mgreen.axialmarket.com'
 
 # Python: virtualenv aliases
 alias virtualenv3='virtualenv -p /usr/local/bin/python3 venv'
