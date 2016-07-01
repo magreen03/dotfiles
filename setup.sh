@@ -1,7 +1,10 @@
 #!/bin/bash
-echo "Setting up Symlink files"
+echo "Setting up Symlink files..."
 ln -s ~/dotfiles/vimrc ~/.vimrc
+echo "Finished vimrc symlink"
 ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
-ln -s ~/dotfiles/bash_profile ~/.bash_profile
+echo "Finished tmux symlink"
+ln -s ~/dotfiles/bash_aliases ~/.bash_aliases
+echo "Finished bash_aliases symlink"
 ln -s ~/dotfiles/bash_prompt ~/.bash_prompt 
-ln -s ~/dotfiles/bashrc ~/.bashrc
+echo "Finished bash_prompt symlink"
