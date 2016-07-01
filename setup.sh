@@ -2,6 +2,8 @@
 echo "Setting up Symlink files..."
 ln -s ~/dotfiles/vimrc ~/.vimrc
 echo "Finished vimrc symlink"
+ln -s ~/dotfiles/vim ~/.vim
+echo "Finished vim directory symlink"
 ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 echo "Finished tmux symlink"
 ln -s ~/dotfiles/bash_aliases ~/.bash_aliases
