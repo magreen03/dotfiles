@@ -44,19 +44,18 @@ colors Tomorrow
 
 nnoremap / /\v
 
+" CtrlP commands
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
 " Leaders
 " --------------------------------------------------
-
 " space-space : Switch between the last two files
 nnoremap <leader><leader> <c-^>
-
 " space-rv : Reload vimrc
 nnoremap <leader>rv :source $MYVIMRC<cr>
-
 " space-ev : Edit vimrc
 nnoremap <leader>ev :e $MYVIMRC<cr>
-
 " NerdTree
 nnoremap <leader>nt :NERDTreeToggle %:h<cr>
 
@@ -74,6 +73,8 @@ Plug 'myusuf3/numbers.vim'    " Numbers
 Plug 'ctrlpvim/ctrlp.vim'     " Ctrlp -> Fuzzy-finding
 Plug 'fatih/vim-go'           " vim-go
 Plug 'chriskempson/tomorrow-theme' "
+Plug 'ctrlpvim/ctrlp.vim'     " Fuzzy path finding
+Plug 'airblade/vim-gitgutter' " Git-Gutter plugin
 call plug#end()
 
 

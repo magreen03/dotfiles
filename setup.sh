@@ -1,4 +1,10 @@
 #!/bin/bash
+
+echo "Setting up custom bin scripts"
+mkdir ~/bin
+git clone git@github.com:magreen03/axial_scripts.git ~/bin
+
+
 echo "Setting up Symlink files..."
 ln -s ~/dotfiles/vimrc ~/.vimrc
 echo "Finished vimrc symlink"
