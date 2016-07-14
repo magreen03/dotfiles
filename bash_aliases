@@ -48,7 +48,7 @@ function local_aliases {
   alias gs='git status'
 
   # Personal
-  alias diary='vim ~/journal/`date +"%Y-%m-%d"`.md'
+  alias diary='atom ~/journal/`date +"%Y-%m-%d"`.md'
 }
 
 function general_aliases {
