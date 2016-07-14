@@ -17,6 +17,7 @@ function remote_aliases {
   alias axms="sudo svstat /service/* | column -t"
   alias axmg="node ~/axm/service/front/node_modules/gulp/bin/gulp.js"
   alias axml='tail -F /var/log/axm/events.log | sed "s/#012/\n/g"'
+  alias post="psql -U axial -d axial"
 }
 
 function local_aliases {
