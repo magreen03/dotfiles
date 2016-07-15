@@ -49,11 +49,18 @@ function local_aliases {
   alias gs='git status'
 
   # Personal
-  alias diary='atom ~/journal/`date +"%Y-%m-%d"`.md'
+  alias mgd=new_journal_entry
 }
 
 function general_aliases {
   echo "Setting up general aliases...";
+}
+
+function new_journal_entry {
+  # create new journal file
+  # echo new template code to file
+  # open file in atom
+  atom ~/journal/`date +"%Y-%m-%d"`.md
 }
 
 function update_concord {
