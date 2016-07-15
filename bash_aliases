@@ -13,11 +13,11 @@ function remote_aliases {
   alias eba="vim ~/.bash_aliases"
 
   # Axial aliases
-  alias build_amdin="cd ~/axm/service/front/; sudo node node_modules/gulp/bin/gulp.js --src_target=admin"
-  alias axms="sudo svstat /service/* | column -t"
-  alias axmg="node ~/axm/service/front/node_modules/gulp/bin/gulp.js"
-  alias axml='tail -F /var/log/axm/events.log | sed "s/#012/\n/g"'
-  alias post="psql -U axial -d axial"
+  alias ax_build_admin="cd ~/axm/service/front/; sudo node node_modules/gulp/bin/gulp.js --src_target=admin"
+  alias ax_gulp="node ~/axm/service/front/node_modules/gulp/bin/gulp.js"
+  alias ax_servs="sudo svstat /service/* | column -t"
+  alias ax_logs='tail -F /var/log/axm/events.log | sed "s/#012/\n/g"'
+  alias ax_pg="psql -U axial -d axial"
 }
 
 function local_aliases {
