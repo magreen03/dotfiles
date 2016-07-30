@@ -14,10 +14,13 @@ function remote_aliases {
 
   # Axial aliases
   alias ax_build_admin="cd ~/axm/service/front/; sudo node node_modules/gulp/bin/gulp.js --src_target=admin"
-  alias ax_gulp="node ~/axm/service/front/node_modules/gulp/bin/gulp.js"
+  alias ax_clean_temp="sudo rm -rf ~/axm/service/front/build && sudo rm -rf ~/axm/service/front/temp"
+  alias ax_gulp="cd ~/axm/service/front && sudo node ~/axm/service/front/node_modules/gulp/bin/gulp.js"
   alias ax_servs="sudo svstat /service/* | column -t"
   alias ax_logs='tail -F /var/log/axm/events.log | sed "s/#012/\n/g"'
   alias ax_pg="psql -U axial -d axial"
+  alias ax_db_up="cd ~/axm/share/migrations/ && alembic upgrade +1"
+  alias ax_root="cd ~/axm"
 }
 
 function local_aliases {
