@@ -1,6 +1,6 @@
 # Changes to Path
 PATH="/usr/local/sbin:$PATH" export PATH
-
+PATH="/usr/local/bin:$PATH" export PATH
 
 # Load Bash Alias file
 source ~/.bash_aliases;
@@ -13,15 +13,6 @@ source ~/.bash_aliases;
 # Environment Vars
 # =======================
 # pip should only run if virtualenv is activated
-export PIP_REQUIRE_VIRTUALENV=true
-
-gpip() {
-  PIP_REQUIRE_VIRTUALENV="" pip "$@"
-}
-
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/code/python
-source /usr/local/bin/virtualenvwrapper.sh
 
 # GO Setup
 export GOPATH="${HOME}/code/go"
