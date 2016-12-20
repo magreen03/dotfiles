@@ -1,6 +1,7 @@
 # Changes to Path
 PATH="/usr/local/sbin:$PATH" export PATH
 PATH="/usr/local/bin:$PATH" export PATH
+PATH="$PATH:`yarn global bin`" export PATH
 
 # Load Bash Alias file
 source ~/.bash_aliases;
@@ -15,11 +16,11 @@ source ~/.bash_aliases;
 # pip should only run if virtualenv is activated
 
 # GO Setup
-export GOPATH="${HOME}/code/go"
-export PATH=$PATH:$GOPATH/bin
+#export GOPATH="${HOME}/code/go"
+#export PATH=$PATH:$GOPATH/bin
 
 # NVM
-export NVM_DIR="/Users/mgreen/.nvm"
+export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 
@@ -28,11 +29,6 @@ export NVM_DIR="/Users/mgreen/.nvm"
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
-
-
-# Log every bash command
-# =======================
-export PROMPT_COMMAND='if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history 1)" >> ~/.logs/bash-history-$(date "+%Y-%m-%d").log; fi'
 
 
 # Load Bash prompt
