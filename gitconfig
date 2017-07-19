@@ -10,7 +10,7 @@
 	cl = clone
 	ci = commit
 	co = checkout
-	br = branch 
+	br = branch
 	cob = checkout -b
 	# }}}
 	# log commands {{{
@@ -32,7 +32,7 @@
 	grep = grep -Ii
 	gr = grep -Ii
 	gra = "!f() { A=$(pwd) && TOPLEVEL=$(git rev-parse --show-toplevel) && cd $TOPLEVEL && git grep --full-name -In $1 | xargs -I{} echo $TOPLEVEL/{} && cd $A; }; f"
-	# list all aliases 
+	# list all aliases
 	la = "!git config -l | grep alias | cut -c 7-"
 	# }}}
 	# reset commands {{{
@@ -47,5 +47,8 @@
 	sl = stash list
 	sa = stash apply
 	ss = stash save
+	# }}}
+	# xero commands {{{
+	fux = fetch upstream
 	# }}}
 # }}}

@@ -3,16 +3,16 @@ let mapleader = " "
 
 " General Vim Setting
 " --------------------------------------------------
-
+set autowrite
+set clipboard=unnamed " Use OS clipboard
+set history=50
 set nobackup
 set nowritebackup
 set noswapfile
-set history=50
 set ruler
 set showcmd
-set autowrite
 
-" Make backspace behave in a sane manner.
+" Make backspace behave in a sane manner
 set backspace=indent,eol,start
 
 " Set line numbers
@@ -39,8 +39,7 @@ syntax on
 filetype plugin indent on
 
 " Color Scheme
-" colors zenburn
-colors Tomorrow
+" colors dracula
 
 nnoremap / /\v
 
@@ -60,21 +59,23 @@ nnoremap <leader>ev :e $MYVIMRC<cr>
 nnoremap <leader>nt :NERDTreeToggle %:h<cr>
 
 "  Plugins using Vim-Plug
-" Use "PlugInstall to Install Plugins
+" Use PlugInstall to Install Plugins
 " --------------------------------------------------
-
 call plug#begin()
-Plug 'tpope/vim-sensible'     " Vim Sensible - Decent defaults
-Plug 'tpope/vim-surround'     " Vim Surround
-Plug 'tpope/vim-fugitive'     " Vim Fugitive
-Plug 'scrooloose/nerdtree'    " NerdTree
-Plug 'scrooloose/syntastic'   " Syntastic
-Plug 'myusuf3/numbers.vim'    " Numbers
-Plug 'ctrlpvim/ctrlp.vim'     " Ctrlp -> Fuzzy-finding
-Plug 'fatih/vim-go'           " vim-go
-Plug 'chriskempson/tomorrow-theme' "
-Plug 'ctrlpvim/ctrlp.vim'     " Fuzzy path finding
-Plug 'airblade/vim-gitgutter' " Git-Gutter plugin
+Plug 'https://github.com/dracula/vim'                   " Dracula Color Theme
+Plug 'tpope/vim-sensible'            " Vim Sensible - Decent defaults
+Plug 'tpope/vim-surround'            " Vim Surround
+Plug 'tpope/vim-fugitive'            " Vim Fugitive
+Plug 'scrooloose/nerdtree'           " NerdTree
+Plug 'scrooloose/syntastic'          " Syntastic
+Plug 'myusuf3/numbers.vim'           " Numbers
+Plug 'ctrlpvim/ctrlp.vim'            " Ctrlp -> Fuzzy-finding
+Plug 'fatih/vim-go'                  " vim-go
+Plug 'chriskempson/tomorrow-theme'   " Tomorrow Color Themes
+Plug 'ctrlpvim/ctrlp.vim'            " Fuzzy path finding
+Plug 'airblade/vim-gitgutter'        " Git-Gutter plugin
+Plug 'editorconfig/editorconfig-vim' " Editorconf
+Plug 'junegunn/vim-easy-align'       " Easy alignment
 call plug#end()
 
 

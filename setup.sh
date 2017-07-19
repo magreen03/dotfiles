@@ -9,9 +9,7 @@ echo "Setting up Symlink files..."
 #ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 #echo "Finished tmux symlink"
 
-# Symlink bash aliases
-ln -s ~/dotfiles/bash_aliases ~/.bash_aliases
 # Symlink bash profile
 ln -s ~/dotfiles/bash_profile ~/.bash_profile
 # Symlink bash prompt
-ln -s ~/dotfiles/bash_prompt ~/.bash_prompt 
+ln -s ~/dotfiles/bash_prompt ~/.bash_prompt
