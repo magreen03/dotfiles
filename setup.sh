@@ -10,11 +10,10 @@ if system_is_OSX; then
   source 'scripts/osx_setup.sh'
 fi
 
-
 # -- GIT Config Setup ----------------------------------------------------------
 
 if get_boolean_response "Do you want to install Git config files?"; then
-  ln -sl $HOME/.dotfiles/git/gitignore_global $HOME/.gitignore_global
+  ln -sf $HOME/.dotfiles/git/gitignore_global $HOME/.gitignore_global
   echo_item "Linked global .gitignore" "green"
 
   ln -sf $HOME/.dotfiles/git/gitconfig $HOME/.gitconfig
@@ -24,12 +23,6 @@ else
   echo_item "Didn't install git config" "red"
 
 fi
-
-:set numbers
-:setnumbers
-
-
-
 
 # -- ZSH Config Setup ----------------------------------------------------------
 
@@ -63,7 +56,6 @@ else
 
 fi
 
-
 # -- Bash Profile Setup --------------------------------------------------------
 
 if get_boolean_response "Do you want to install Bash Profile?"; then
@@ -76,7 +68,6 @@ else
 fi
 
 echo ""
-
 
 # -- Node Setup ----------------------------------------------------------------
 
@@ -92,7 +83,6 @@ else
     echo_item "Skipping Node.js tools install" "red"
   fi
 fi
-
 
 # -- VIM Setup -----------------------------------------------------------------
 if get_boolean_response "Do you want to install the Neoim configuration file?"
