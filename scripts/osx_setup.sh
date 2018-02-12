@@ -1,7 +1,6 @@
 #!/bin/bash
 # OSX setup
 
-
 # -- Hombrew ----------------------------------
 
 if exits "brew"; then
@@ -15,6 +14,4 @@ else
 fi
 
 echo ""
-
-
 

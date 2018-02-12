@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/usr/axm'
-let g:netrw_dirhist_2='/usr/axm/service/front/src/js/company'
-let g:netrw_dirhist_3='/usr/axm'
-let g:netrw_dirhist_4='/usr/axm/service/front/src'
-let g:netrw_dirhist_5='/usr/axm/service/front/src/templates/opportunity'
-let g:netrw_dirhist_6='/Users/mike.green'

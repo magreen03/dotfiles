@@ -1,0 +1,38 @@
+# Shell Aliases
+# ===============================
+alias ll='gls -ACGh --color=auto'
+alias la='ls -al'
+alias clr='clear'
+alias erc='vim ~/.dotfiles/zsh/zshrc'
+alias rrc='source ~/.zshrc'
+alias ealias='vim ~/.dotfiles/zsh/aliases'
+alias dev="cd ~/Development"
+
+# Fun Aliases
+# ===============================
+alias weather='curl -4 http://wttr.in/new_york'
+alias moon='curl -4 http://wttr.in/Moon'
+
+# Xero Aliases
+# ===============================
+XERO_DIR="~/Xero_Development/"
+alias xdev="cd ${XERO_DIR}"
+alias xac="cd ${XERO_DIR}/XeroJS/ContactsAutocompleter"
+alias xca="cd ${XERO_DIR}/ReactLabs/contacts-autocompleter"
+alias dnotes="vim ${XERO_DIR}/Notes/"
+alias npmac="npm i ../../ReactLabs/contacts-autocompleter"
+
+# Mongo shell start
+# ======================
+alias mdb="mongod --dbpath /Users/mike.green/Development/mongo_data/db"
+
+# NPM  Aliases
+# ===============================
+alias npmg='npm list -g --depth=0 2>/dev/null'
+alias npml='npm list --depth=0 2>/dev/null'
+alias nrw='npm run watch'
+
+# Sublime Text Alias
+# ===============================
+alias sl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+
