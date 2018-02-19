@@ -45,6 +45,9 @@ Plug 'retorillo/airline-tablemode.vim'
 Plug 'edkolev/tmuxline.vim'               " Make the Tmux bar match Vim
 Plug 'ryanoasis/vim-webdevicons'
 Plug 'junegunn/goyo.vim'
+" Plug 'prettier/vim-prettier', {
+"  \ 'do': 'npm install',
+"  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
 
 " Project Navigation
 Plug 'mhinz/vim-grepper'
@@ -70,11 +73,11 @@ Plug 'junegunn/gv.vim',                   { 'on': 'GV' }
 Plug 'w0rp/ale'                           " Linter
 
 " Autocomplete
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-jedi'              " deoplete source for Python
-Plug 'carlitux/deoplete-ternjs'
-Plug 'alexlafroscia/deoplete-flow',       { 'branch': 'pass-filename-to-autocomplete' }
-Plug 'zchee/deoplete-go'
+ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+ Plug 'zchee/deoplete-jedi'              " deoplete source for Python
+" Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
+ Plug 'alexlafroscia/deoplete-flow',       { 'branch': 'pass-filename-to-autocomplete' }
+ Plug 'zchee/deoplete-go'
 
 " Markdown
 Plug 'reedes/vim-pencil'                  " Markdown, Writing
@@ -110,20 +113,23 @@ Plug 'nsf/gocode',                        { 'rtp': 'nvim', 'do': './nvim/symlink
 
 call plug#end()
 
-" Plugin Configration
+" Plugin Configuration
 " --------------------------------------------------
 
 " vim-airline
 let g:airline_powerline_fonts = 1 " Enable the patched Powerline fonts
 
 " emmet-vim
-let g:user_emmet_leader_key='<C-E>'
+let g:user_emmet_leader_key='<C-M>'
 
 let g:user_emmet_settings = {
   \    'html' : {
   \        'quote_char': "'"
   \    }
   \}
+
+" Use deoplete.
+" let g:deoplete#enable_at_startup = 1
 
 " Remappings
 " --------------------------------------------------
