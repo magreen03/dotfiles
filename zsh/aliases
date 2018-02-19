@@ -20,7 +20,7 @@ alias xdev="cd ${XERO_DIR}"
 alias xac="cd ${XERO_DIR}/XeroJS/ContactsAutocompleter"
 alias xca="cd ${XERO_DIR}/ReactLabs/contacts-autocompleter"
 alias dnotes="vim ${XERO_DIR}/Notes/"
-alias npmac="npm i ../../ReactLabs/contacts-autocompleter"
+alias nilac="npm i ${XERO_DIR}/ReactLabs/contacts-autocompleter"
 
 # Mongo shell start
 # ======================
