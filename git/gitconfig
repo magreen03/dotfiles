@@ -1,8 +1,10 @@
+
 [user]
   name = Michael Green
   email = greenm2@gmail.com
 
 [alias]
+  branch-name = "!git rev-parse --abbrev-ref HEAD"
   cp = cherry-pick
   st = status -s
   cl = clone
@@ -49,3 +51,5 @@
 
   # xero commands
   fux = fetch upstream
+  pub = "!git push -u origin $(git branch-name)"
+  unpub = "!git push origin :$(git branch-name)"
