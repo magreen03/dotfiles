@@ -8,6 +8,11 @@ alias rrc='source ~/.zshrc'
 alias ealias='vim ~/.dotfiles/zsh/aliases'
 alias dev="cd ~/Development"
 
+# Mac Aliases
+# ===============================
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+
 # Fun Aliases
 # ===============================
 alias weather='curl -4 http://wttr.in/new_york'
