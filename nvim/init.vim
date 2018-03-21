@@ -42,42 +42,42 @@ call plug#begin()
 Plug 'trevordmiller/nova-vim'
 Plug 'vim-airline/vim-airline'            " Handy info
 Plug 'retorillo/airline-tablemode.vim'
-Plug 'edkolev/tmuxline.vim'               " Make the Tmux bar match Vim
-Plug 'ryanoasis/vim-webdevicons'
-Plug 'junegunn/goyo.vim'
+" Plug 'edkolev/tmuxline.vim'               " Make the Tmux bar match Vim
+"Plug 'ryanoasis/vim-webdevicons'
+"Plug 'junegunn/goyo.vim'
 " Plug 'prettier/vim-prettier', {
 "  \ 'do': 'npm install',
 "  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
 
 " Project Navigation
-Plug 'mhinz/vim-grepper'
-Plug 'scrooloose/nerdtree'
+" Plug 'mhinz/vim-grepper'
+" Plug 'scrooloose/nerdtree'
 
 " File Naviation
 Plug 'jeffkreeftmeijer/vim-numbertoggle'  " Smarter line numbers
-Plug 'haya14busa/incsearch.vim'           " Better search highlighting
+"Plug 'haya14busa/incsearch.vim'           " Better search highlighting
 
 " Editing
 Plug 'tpope/vim-surround'                 " Change word surroundings
 Plug 'tpope/vim-commentary'               " Comments stuff
 Plug 'tpope/vim-repeat'
-Plug 'Konfekt/FastFold'
+"Plug 'Konfekt/FastFold'
 Plug 'editorconfig/editorconfig-vim'
 
 " Git
 Plug 'tpope/vim-fugitive'                 " Git stuff in Vim
 Plug 'airblade/vim-gitgutter'
-Plug 'junegunn/gv.vim',                   { 'on': 'GV' }
+" Plug 'junegunn/gv.vim',                   { 'on': 'GV' }
 
 " Tasks
-Plug 'w0rp/ale'                           " Linter
+" Plug 'w0rp/ale'                           " Linter
 
 " Autocomplete
- Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
- Plug 'zchee/deoplete-jedi'              " deoplete source for Python
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'zchee/deoplete-jedi'              " deoplete source for Python
 " Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
- Plug 'alexlafroscia/deoplete-flow',       { 'branch': 'pass-filename-to-autocomplete' }
- Plug 'zchee/deoplete-go'
+" Plug 'alexlafroscia/deoplete-flow',       { 'branch': 'pass-filename-to-autocomplete' }
+" Plug 'zchee/deoplete-go'
 
 " Markdown
 Plug 'reedes/vim-pencil'                  " Markdown, Writing
@@ -97,19 +97,17 @@ Plug 'cakebaker/scss-syntax.vim'
 " Javascript
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
-Plug 'rhysd/npm-debug-log.vim'
-Plug '~/projects/vim-plugins/vim-ember-cli'
-Plug 'AndrewRadev/ember_tools.vim'
-Plug 'neovim/node-host',                  { 'do': 'npm install' }
+Plug 'leafgarland/typescript-vim'
+" Plug 'rhysd/npm-debug-log.vim'
 
 " Python
-Plug 'klen/python-mode',                  { 'for': 'python' }
-Plug 'davidhalter/jedi-vim',              { 'for': 'python' }
-Plug 'alfredodeza/pytest.vim',            { 'for': 'python' }
+" Plug 'klen/python-mode',                  { 'for': 'python' }
+" Plug 'davidhalter/jedi-vim',              { 'for': 'python' }
+" Plug 'alfredodeza/pytest.vim',            { 'for': 'python' }
 
 " Go
-Plug 'fatih/vim-go'
-Plug 'nsf/gocode',                        { 'rtp': 'nvim', 'do': './nvim/symlink.sh' }
+" Plug 'fatih/vim-go'
+" Plug 'nsf/gocode',                        { 'rtp': 'nvim', 'do': './nvim/symlink.sh' }
 
 call plug#end()
 
