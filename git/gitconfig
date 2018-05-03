@@ -1,7 +1,7 @@
 
 [user]
-  name = Michael Green
-  email = greenm2@gmail.com
+	name = Michael Green
+	email = mike.green@xero.com
 
 [alias]
   branch-name = "!git rev-parse --abbrev-ref HEAD"

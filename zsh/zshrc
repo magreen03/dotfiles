@@ -96,12 +96,6 @@ source $ZSH/oh-my-zsh.sh
 # -- Dotfiles Directory ---------------------------------------------------------------
 export DOTFILES="$HOME/.dotfiles"
 
-# -- NeoVim Config --------------------------------------------------------------------
-export EDITOR="$(brew --prefix)/bin/nvim"
-export NVIM_TUI_ENABLE_TRUE_COLOR=1
-alias vim=nvim
-alias vi=nvim
-
 # -- Local Aliases -------------------------------------------------------------------
 if [[ -f "$DOTFILES/zsh/aliases" ]]; then
   source $DOTFILES/zsh/aliases
@@ -114,3 +108,9 @@ fi
 # -- NVM Setup ------------------------------------------------------------------------
 export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# -- PATH Setup -----------------------------------------------------------------------
+export PATH="/usr/local/bin:$PATH"
+
+# path updatas for Anaconda
+# export PATH="$HOME/anaconda3/bin:$PATH"

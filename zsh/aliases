@@ -1,43 +1,78 @@
 # Shell Aliases
 # ===============================
-alias ll='gls -ACGh --color=auto'
+alias ll='gls -acgh --color=auto'
 alias la='ls -al'
 alias clr='clear'
 alias erc='vim ~/.dotfiles/zsh/zshrc'
 alias rrc='source ~/.zshrc'
 alias ealias='vim ~/.dotfiles/zsh/aliases'
-alias dev="cd ~/Development"
+alias dev="cd ~/development"
 
-# Mac Aliases
+# mac aliases
 # ===============================
-alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
-alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+alias showfiles='defaults write com.apple.finder appleshowallfiles yes; killall finder /system/library/coreservices/finder.app'
+alias hidefiles='defaults write com.apple.finder appleshowallfiles no; killall finder /system/library/coreservices/finder.app'
 
-# Fun Aliases
+# fun aliases
 # ===============================
 alias weather='curl -4 http://wttr.in/new_york'
-alias moon='curl -4 http://wttr.in/Moon'
+alias moon='curl -4 http://wttr.in/moon'
 
-# Xero Aliases
+# xero aliases
 # ===============================
-XERO_DIR="~/Xero_Development/"
-alias xdev="cd ${XERO_DIR}"
-alias xac="cd ${XERO_DIR}/XeroJS/ContactsAutocompleter"
-alias xca="cd ${XERO_DIR}/ReactLabs/contacts-autocompleter"
-alias dnotes="vim ${XERO_DIR}/Notes/"
-alias nilac="npm i ${XERO_DIR}/ReactLabs/contacts-autocompleter"
+xero_dir="~/xero_development/"
+alias xdev="cd ${xero_dir}"
+alias xac="cd ${xero_dir}/xerojs/contactsautocompleter"
+alias xca="cd ${xero_dir}/reactlabs/contacts-autocompleter"
+alias dnotes="vim ${xero_dir}/notes/"
+alias nilac="npm i ${xero_dir}/reactlabs/contacts-autocompleter"
 
-# Mongo shell start
+# mongo shell start
 # ======================
-alias mdb="mongod --dbpath /Users/mike.green/Development/mongo_data/db"
+alias mdb="mongod --dbpath /users/mike.green/development/mongo_data/db"
 
-# NPM  Aliases
+# npm  aliases
 # ===============================
 alias npmg='npm list -g --depth=0 2>/dev/null'
 alias npml='npm list --depth=0 2>/dev/null'
 alias nrw='npm run watch'
 
-# Sublime Text Alias
+# sublime text alias
 # ===============================
-alias sl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias sl="/applications/sublime\ text.app/contents/sharedsupport/bin/subl"
 
+
+# Misc Alias
+# ===============================
+ALIASDOC="
+Here are my current Aliases
+==================================
+ll: list files
+la: list files including hidden files
+
+erc: edit zshrc file
+rrc: reload zshrc file
+eliase: edit alias file
+
+dev: go to dev folder
+
+showfiles: show hidden files in finder
+hidefiles: hide hidden files in finder
+
+weather: show current weather
+moon: show current phase of the moon
+
+xdev: go do xero dev directory
+xac: go to xero autocompleter directory
+xca: go to contacts-autocompleter view director
+nilac: npm install local contacts-autocompelter
+
+mdb: start mongo shell
+
+npmg: list global npm packages
+npml: list local npm packages
+nrw: run npm run watch command
+
+sl: open Sublime Text 3
+"
+alias lsas='printf ${ALIASDOC}'
